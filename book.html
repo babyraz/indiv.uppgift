@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book - Bonz.ai</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="book-page">
+  <header class="header">
+    <div class="button-container">
+      <a href="index.html" class="btn btn-primary">Home</a>
+      <a href="book.html" class="btn btn-primary">Book</a>
+      <a href="info.html" class="btn btn-primary">Information</a>
+    </div>
+  </header>
+  
+  <img src="logo/bonz.ai-logo-white-symbol.png" alt="Bonz.ai logo" class="logo">
+  <h1 class="page-title">Book Your Stay</h1>
+<!-- Här används BEM-->
+  <div class="search-form">
+    <h2 class="search-form__title">Search for a Room</h2>
+    <form class="search-form__form">
+      <div class="search-form__group">
+        <label for="check-in-date" class="search-form__label">Check-in Date</label>
+        <input type="date" id="check-in-date" name="check-in-date" class="search-form__input">
+      </div>
+      <div class="search-form__group">
+        <label for="check-out-date" class="search-form__label">Check-out Date</label>
+        <input type="date" id="check-out-date" name="check-out-date" class="search-form__input">
+      </div>
+      <div class="search-form__group">
+        <label for="guests" class="search-form__label">Number of Guests</label>
+        <select id="guests" name="guests" class="search-form__input">
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+        </select>
+      </div>
+      <div class="search-form__group">
+        <button type="submit" class="btn btn-primary search-form__button">Search</button>
+      </div>
+    </form>
+  </div>
+</body>
+<!--slut på BEM-->
+  <main class="hotel-results">
+   
+    <div class="hotel-card">
+      <img src="photos/01-day.jpg" alt="Fish Island" class="hotel-image">
+      <div class="hotel-info">
+        <h2 class="hotel-name">Fish Island</h2>
+        <p>Price: $200/night</p>
+        <p>Sustainability Score: 9.5</p>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="photos/02-day.jpg" alt="Mayo Prince" class="hotel-image">
+      <div class="hotel-info">
+        <h2 class="hotel-name">Mayo Prince</h2>
+        <p>Price: $180/night</p>
+        <p>Sustainability Score: 8.8</p>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="photos/03-day.jpg" alt="Palm Beach" class="hotel-image">
+      <div class="hotel-info">
+        <h2 class="hotel-name">Palm Beach</h2>
+        <p>Price: $220/night</p>
+        <p>Sustainability Score: 9.2</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
